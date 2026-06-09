@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Déclic Entrepreneurs — Reprenez le contrôle de votre fiscalité</title>
+<meta name="description" content="Avant d'aller plus loin : la vidéo, l'interview Le Figaro et tout ce qui prouve que Déclic Entrepreneurs est le bon interlocuteur pour optimiser votre fiscalité." />
+
+<meta property="og:title" content="Déclic Entrepreneurs — Reprenez le contrôle de votre fiscalité" />
+<meta property="og:description" content="La vidéo à regarder, l'interview Le Figaro, et tout ce qui compte avant notre échange." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   DÉCLIC ENTREPRENEURS — Landing d'autorité
+   Thème : BLEU NUIT + ORANGE (fidèle au logo).
+   Couleurs centralisées dans :root — modifiables facilement.
+   ============================================================ */
+:root{
+  --navy:#13233f;          /* fond principal              */
+  --navy-2:#1a2c4c;        /* cartes / sections alternées */
+  --navy-3:#22375d;        /* hover / surfaces hautes     */
+  --navy-deep:#0e1a30;     /* footer / contrastes forts   */
+  --orange:#f0922f;        /* accent principal            */
+  --orange-2:#ffb35c;      /* accent clair / dégradés     */
+  --orange-deep:#d97816;
+  --gold:#ffc24d;          /* étoiles                     */
+  --white:#f4f7fb;         /* texte clair                 */
+  --muted:#9db0ca;         /* texte secondaire            */
+  --line:rgba(255,255,255,.10);
+  --line-strong:rgba(255,255,255,.18);
+  --radius:18px;
+  --shadow:0 24px 60px -22px rgba(0,0,0,.65);
+  --shadow-sm:0 8px 24px -12px rgba(0,0,0,.55);
+  --shadow-orange:0 16px 40px -16px rgba(240,146,47,.55);
+  --maxw:1100px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  color:var(--white);
+  background:var(--navy);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Sora','Inter',sans-serif;color:#fff;line-height:1.16;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--orange);
+}
+.eyebrow::before{content:"";width:24px;height:2px;background:var(--orange);border-radius:2px}
+.accent{color:var(--orange)}
+
+/* ---------- TOP BAR + PROGRESSION ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(15,26,48,.82);
+  backdrop-filter:saturate(160%) blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Sora',sans-serif;font-weight:800;font-size:19px;color:#fff;letter-spacing:-.01em}
+.logo img{height:48px;width:auto;border-radius:11px}
+/* repli logo texte si l'image manque */
+.logo-fallback{display:flex;align-items:center;gap:10px}
+.logo-fallback .mark{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--orange-2),var(--orange-deep));color:#fff;font-size:20px;box-shadow:var(--shadow-orange)}
+.logo-fallback small{font-weight:500;color:var(--muted);font-size:12.5px;font-family:'Inter'}
+.steps{display:flex;align-items:center;gap:12px}
+.step{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:#6f83a3}
+.step.active{color:var(--orange)}
+.step .dot{width:9px;height:9px;border-radius:50%;background:#34466a}
+.step.active .dot{background:var(--orange);box-shadow:0 0 0 4px rgba(240,146,47,.18)}
+.step .bar{width:30px;height:3px;border-radius:3px;background:#2a3c5e}
+.step.active .bar{background:linear-gradient(90deg,var(--orange),var(--orange-deep))}
+
+/* ---------- HERO + VSL ---------- */
+.hero{position:relative;padding:56px 0 32px}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;background:
+  radial-gradient(900px 420px at 50% -140px, rgba(240,146,47,.22), transparent 65%),
+  radial-gradient(700px 300px at 80% 10%, rgba(34,55,93,.6), transparent 70%);}
+.hero .wrap{position:relative;z-index:1}
+.hero-head{text-align:center;max-width:780px;margin:0 auto 30px}
+.hero h1{font-size:clamp(29px,4.8vw,48px);margin:18px 0 16px}
+.hero p.lead{font-size:clamp(16px,2vw,19px);color:var(--muted)}
+.badge-mandatory{
+  display:inline-flex;align-items:center;gap:9px;margin-bottom:4px;
+  background:linear-gradient(135deg,var(--orange),var(--orange-deep));color:#fff;padding:9px 17px;border-radius:100px;
+  font-size:13px;font-weight:700;letter-spacing:.03em;box-shadow:var(--shadow-orange);
+}
+.badge-mandatory .pulse{width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(255,255,255,.7);animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.6)}70%{box-shadow:0 0 0 10px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+
+/* VSL — fixe / non scrollable (clean) */
+.vsl-frame{
+  max-width:840px;margin:0 auto;position:relative;
+  border-radius:22px;overflow:hidden;background:#000;
+  box-shadow:var(--shadow);border:1px solid var(--line-strong);
+}
+.vsl-frame::before{content:"";position:absolute;inset:0;border-radius:22px;padding:1.5px;z-index:3;pointer-events:none;
+  background:linear-gradient(135deg,rgba(240,146,47,.7),transparent 45%,rgba(240,146,47,.25));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude}
+.ratio{position:relative;width:100%;padding-top:56.25%}
+.ratio iframe,.ratio video{position:absolute;inset:0;width:100%;height:100%;border:0;overflow:hidden}
+.vsl-frame .ratio{overflow:hidden}
+.vsl-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  background:radial-gradient(600px 300px at 50% 30%,rgba(240,146,47,.16),transparent 70%),linear-gradient(160deg,#1a2c4c,#0e1a30)}
+.vsl-placeholder .vsl-mark{position:absolute;top:18px;left:20px;width:36px;height:36px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--orange-2),var(--orange-deep));color:#fff;font-size:20px;box-shadow:var(--shadow-orange)}
+.vsl-play{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--orange-deep));
+  display:grid;place-items:center;box-shadow:var(--shadow-orange);animation:pulse 2.2s infinite}
+.vsl-play svg{width:32px;height:32px;color:#fff;margin-left:4px}
+.vsl-txt{text-align:center;font-family:'Sora';font-weight:700;color:#fff;font-size:18px}
+.vsl-txt small{display:block;font-family:'Inter';font-weight:400;color:var(--muted);font-size:12.5px;margin-top:4px}
+.vsl-caption{display:flex;align-items:center;justify-content:center;gap:22px;margin:18px auto 0;color:var(--muted);font-size:13.5px;flex-wrap:wrap}
+.vsl-caption span{display:inline-flex;align-items:center;gap:7px}
+.vsl-caption svg{width:16px;height:16px;color:var(--orange)}
+
+/* ---------- POURQUOI LA VIDÉO ---------- */
+.why{padding:20px 0 6px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:900px;margin:0 auto}
+.why-card{background:var(--navy-2);border:1px solid var(--line);border-radius:14px;padding:22px}
+.why-card .n{width:32px;height:32px;border-radius:9px;background:rgba(240,146,47,.16);color:var(--orange);font-weight:800;display:grid;place-items:center;font-family:'Sora';margin-bottom:13px}
+.why-card h4{font-size:16px;margin-bottom:6px}
+.why-card p{font-size:13.5px;color:var(--muted)}
+
+/* ---------- SECTIONS ---------- */
+section.block{padding:66px 0;position:relative}
+.alt{background:var(--navy-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-head{text-align:center;max-width:700px;margin:0 auto 42px}
+.section-head h2{font-size:clamp(25px,3.6vw,37px);margin:14px 0 12px}
+.section-head p{color:var(--muted);font-size:16px}
+
+/* ---------- FIGARO + LINKEDIN ---------- */
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:940px;margin:0 auto}
+.proof-card{
+  position:relative;display:flex;flex-direction:column;
+  background:var(--navy-2);border:1px solid var(--line-strong);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-sm);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,border-color .35s;
+}
+.proof-card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:rgba(240,146,47,.5)}
+
+/* Figaro */
+.fig-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#000;cursor:pointer}
+.fig-video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
+.fig-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.proof-card:hover .fig-poster{transform:scale(1.04)}
+.fig-thumb::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(10,18,30,.35) 0%,transparent 28%,transparent 60%,rgba(10,18,30,.72) 100%)}
+.fig-brand{position:absolute;bottom:12px;left:14px;z-index:3;display:flex;align-items:center;gap:8px;
+  font-family:Georgia,'Times New Roman',serif;font-weight:700;color:#fff;font-size:17px;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.fig-brand::before{content:"";width:5px;height:20px;background:#c0392b;border-radius:2px}
+.fig-brand small{font-family:'Inter';font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#e7c3bd}
+.pill-tag{position:absolute;top:14px;left:14px;z-index:3;background:rgba(14,26,48,.9);color:#fff;font-size:11.5px;font-weight:700;
+  padding:7px 12px;border-radius:100px;letter-spacing:.04em;display:inline-flex;align-items:center;gap:6px}
+.pill-tag.red{background:#c0392b}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;
+  background:rgba(255,255,255,.96);display:grid;place-items:center;box-shadow:0 12px 34px rgba(0,0,0,.4);transition:transform .3s;z-index:2}
+.proof-card:hover .play{transform:translate(-50%,-50%) scale(1.09)}
+.play svg{width:26px;height:26px;color:#c0392b;margin-left:3px}
+
+/* LinkedIn — mini profil */
+.li-banner{height:108px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:flex-end;padding:0 22px;
+  background:linear-gradient(120deg,#0e1a30,#1a2c4c 55%,#22375d)}
+.li-banner .glow{position:absolute;left:-40px;bottom:-50px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(240,146,47,.30),transparent 70%)}
+.li-brand{position:relative;z-index:2;display:flex;align-items:center;gap:11px}
+.li-brand .bolt{width:36px;height:36px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--orange-2),var(--orange-deep));color:#fff;font-size:21px;box-shadow:var(--shadow-orange)}
+.li-brand .bn{font-family:'Sora';font-weight:800;color:#fff;font-size:18px;line-height:1.04;text-shadow:0 1px 8px rgba(0,0,0,.4);text-align:left}
+.li-brand .bn small{display:block;font-weight:500;font-size:10.5px;color:var(--orange-2);letter-spacing:.16em;text-transform:uppercase}
+.li-avatar{width:110px;height:110px;border-radius:50%;margin:-60px 0 0 24px;position:relative;z-index:3;
+  background:linear-gradient(135deg,var(--orange),var(--orange-deep));color:#fff;display:grid;place-items:center;
+  font-family:'Sora';font-weight:800;font-size:38px;overflow:hidden;border:4px solid var(--navy-2);box-shadow:0 10px 26px rgba(0,0,0,.5)}
+.li-avatar img{width:100%;height:100%;object-fit:cover}
+.li-body{padding:14px 22px 26px}
+.li-body .name{font-family:'Sora';font-weight:800;color:#fff;font-size:23px}
+.li-body .role{font-size:14px;color:var(--orange);font-weight:600;margin-top:3px}
+.li-bio{font-size:13.8px;color:var(--muted);margin-top:13px;line-height:1.6;max-width:84%}
+.li-bio strong{color:#fff;font-weight:600}
+.li-meta{font-size:12.5px;color:#6f83a3;margin-top:13px;display:flex;align-items:center;gap:7px}
+.li-meta .vd{width:9px;height:9px;border-radius:50%;background:#0a66c2;box-shadow:0 0 0 3px rgba(10,102,194,.22)}
+.li-biglogo{position:absolute;bottom:20px;right:20px;z-index:4;width:56px;height:56px;border-radius:14px;background:#0a66c2;
+  display:grid;place-items:center;box-shadow:0 14px 28px -8px rgba(10,102,194,.85);transition:transform .3s,background .3s}
+.proof-card:hover .li-biglogo{transform:translateY(-3px) scale(1.07);background:#0958a8}
+.li-biglogo svg{width:33px;height:33px;color:#fff}
+
+.proof-body{padding:20px 22px 22px}
+.proof-body .src{font-size:12px;font-weight:700;color:var(--orange);letter-spacing:.06em;text-transform:uppercase}
+.proof-body h3{font-size:20px;margin:7px 0 7px;color:#fff}
+.proof-body p{font-size:14.5px;color:var(--muted)}
+.proof-cta{margin-top:16px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--orange)}
+.proof-cta svg{width:17px;height:17px;transition:transform .3s}
+.proof-card:hover .proof-cta svg{transform:translateX(5px)}
+
+/* ---------- QUI EST JÉRÔME ---------- */
+.founder-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:46px;align-items:center}
+.founder-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow);
+  background:linear-gradient(135deg,var(--navy-3),var(--navy-deep))}
+.founder-photo img{width:100%;height:100%;object-fit:cover}
+.founder-photo .fallback{position:absolute;inset:0;display:grid;place-items:center;color:var(--orange);font-family:'Sora';font-weight:800;font-size:70px;opacity:.85}
+.founder-photo .tag{position:absolute;bottom:16px;left:16px;right:16px;background:rgba(14,26,48,.82);border:1px solid var(--line);
+  border-radius:12px;padding:13px 15px;backdrop-filter:blur(6px)}
+.founder-photo .tag strong{font-family:'Sora';color:#fff;display:block;font-size:15px}
+.founder-photo .tag span{font-size:12.5px;color:var(--orange-2)}
+.founder h2{font-size:clamp(25px,3.6vw,35px);margin:14px 0 18px}
+.founder p{color:var(--muted);margin-bottom:14px;font-size:15.5px}
+.founder p strong{color:#fff}
+.cred-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.cred{display:inline-flex;align-items:center;gap:8px;background:rgba(240,146,47,.12);border:1px solid rgba(240,146,47,.35);
+  color:#fff;font-weight:600;font-size:13.5px;padding:9px 14px;border-radius:100px}
+.cred svg{width:15px;height:15px;color:var(--orange)}
+.pressrow{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px;padding-top:24px;border-top:1px dashed var(--line-strong)}
+.pressrow .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#6f83a3;font-weight:700}
+.press-chip{font-family:'Sora';font-weight:700;color:#fff;font-size:18px;opacity:.92}
+.press-chip.fig{font-family:Georgia,serif;font-weight:700}
+
+/* ---------- DOULEUR / GAIN ---------- */
+.pg-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:940px;margin:0 auto}
+.pg-col{border-radius:var(--radius);padding:30px}
+.pg-col.pain{background:rgba(255,255,255,.03);border:1px solid var(--line)}
+.pg-col.gain{background:linear-gradient(155deg,rgba(240,146,47,.18),rgba(240,146,47,.04));border:1px solid rgba(240,146,47,.4)}
+.pg-col h3{color:#fff;font-size:19px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.pg-col ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+.pg-col li{display:flex;gap:12px;font-size:15px;color:#cdd8ea}
+.pg-col li svg{width:20px;height:20px;flex:none;margin-top:2px}
+.pg-col li strong{color:#fff}
+.pain li svg{color:#ff8a7a}
+.gain li svg{color:var(--orange)}
+.pg-bridge{text-align:center;max-width:700px;margin:36px auto 0;color:var(--muted);font-size:15.5px}
+.pg-bridge strong{color:var(--orange)}
+
+/* ---------- CHIFFRES ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:980px;margin:0 auto}
+.stat{text-align:center;padding:28px 14px;border:1px solid var(--line);border-radius:16px;background:var(--navy-2)}
+.stat .num{font-family:'Sora';font-weight:800;font-size:clamp(27px,3.6vw,40px);color:#fff;letter-spacing:-.03em}
+.stat .num .accent{color:var(--orange)}
+.stat .lbl{font-size:13px;color:var(--muted);margin-top:7px}
+
+/* ---------- TÉMOIGNAGES ---------- */
+.tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tst{background:var(--navy);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+.tst .stars{color:var(--gold);font-size:16px;letter-spacing:2px;margin-bottom:13px}
+.tst p{font-size:14.5px;color:#dce4f0;margin-bottom:18px;flex:1}
+.tst .who{display:flex;align-items:center;gap:12px}
+.tst .av{width:44px;height:44px;flex:none;border-radius:50%;background:rgba(240,146,47,.16);color:var(--orange);display:grid;place-items:center;font-weight:700;font-family:'Sora'}
+.tst .who>div{flex:1;min-width:0}
+.tst .who b{display:block;font-size:14px;color:#fff;font-family:'Sora'}
+.tst .who small{display:block;color:var(--muted);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tst .save{flex:none;background:rgba(240,146,47,.16);color:var(--orange);font-weight:700;font-size:13px;padding:7px 13px;border-radius:100px;white-space:nowrap}
+
+/* ---------- PARTENAIRES — BANDEAU DÉFILANT ---------- */
+.partners{padding:40px 0;background:var(--navy-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.partners .lbl{text-align:center;font-size:12.5px;text-transform:uppercase;letter-spacing:.14em;color:#6f83a3;font-weight:700;margin-bottom:28px}
+.marquee{position:relative;width:100%;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;align-items:center;gap:26px;width:max-content;animation:scroll 26s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee.rev .marquee-track{animation-direction:reverse}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* avis clients défilants (sens inversé → droite) */
+.marquee-track.tst-track{align-items:stretch;gap:22px;animation-duration:46s;padding:8px 0}
+.tst-track .tst{width:350px;flex:none}
+.p-chip{flex:none;height:88px;width:200px;background:#fff;border-radius:14px;display:grid;place-items:center;
+  padding:20px 26px;box-shadow:0 10px 28px -14px rgba(0,0,0,.6)}
+.p-chip img{max-height:46px;max-width:150px;width:auto;object-fit:contain}
+@media (prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;justify-content:center}}
+
+/* ---------- FAQ ---------- */
+.faq-wrap{max-width:780px;margin:0 auto}
+.faq{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;background:var(--navy-2);overflow:hidden;transition:box-shadow .3s,border-color .3s}
+.faq[open]{box-shadow:var(--shadow-sm)}
+.faq summary{cursor:pointer;list-style:none;padding:19px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Sora';font-weight:600;color:#fff;font-size:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .ic{width:28px;height:28px;border-radius:50%;background:rgba(240,146,47,.16);color:var(--orange);display:grid;place-items:center;flex:none;transition:transform .3s;font-size:19px;line-height:1}
+.faq[open] summary .ic{transform:rotate(45deg)}
+.faq .ans{padding:0 22px 21px;color:var(--muted);font-size:15px}
+.faq .ans strong{color:#fff}
+.faq.highlight{border-color:rgba(240,146,47,.55);background:linear-gradient(180deg,rgba(240,146,47,.1),var(--navy-2))}
+
+/* ---------- BANDEAU RÉASSURANCE ---------- */
+.reassure{background:linear-gradient(135deg,var(--orange-deep),var(--orange));color:#fff;text-align:center;padding:48px 0}
+.reassure-row{display:flex;align-items:center;justify-content:center;gap:16px 36px;flex-wrap:wrap}
+.reassure-row .r{display:inline-flex;align-items:center;gap:10px;font-family:'Sora';font-weight:700;font-size:17px}
+.reassure-row svg{width:23px;height:23px}
+
+/* ---------- RESSOURCES ---------- */
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:920px;margin:0 auto}
+.res-card{display:flex;align-items:center;gap:14px;background:var(--navy-2);border:1px solid var(--line);border-radius:14px;padding:19px;
+  box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s,border-color .3s}
+.res-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(240,146,47,.4)}
+.res-ic{width:48px;height:48px;border-radius:12px;flex:none;display:grid;place-items:center;color:#fff}
+.res-ic svg{width:24px;height:24px}
+.res-ic.insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.res-ic.site{background:linear-gradient(135deg,var(--orange),var(--orange-deep))}
+.res-ic.pappers{background:linear-gradient(135deg,#2d3a8c,#1b2566)}
+.res-card b{font-family:'Sora';font-size:15px;color:#fff;display:block}
+.res-card small{color:var(--muted);font-size:13px}
+.res-card .arrow{margin-left:auto;color:#5d7290;transition:transform .3s,color .3s}
+.res-card:hover .arrow{transform:translateX(4px);color:var(--orange)}
+.res-card .arrow svg{width:18px;height:18px}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--navy-deep);color:#7e93b3;padding:50px 0 36px;text-align:center;border-top:1px solid var(--line)}
+footer .logo{justify-content:center;margin-bottom:14px}
+footer p{font-size:13.5px;max-width:580px;margin:0 auto 8px}
+footer .small{font-size:12px;color:#566c8c;margin-top:18px}
+
+/* ---------- ANIMATIONS AU SCROLL ---------- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:880px){
+  .why-grid{grid-template-columns:1fr}
+  .founder-grid{grid-template-columns:1fr;gap:28px}
+  .founder-photo{max-width:340px;margin:0 auto}
+  .pg-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .tst-grid{grid-template-columns:1fr}
+  .res-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .steps .step .bar{display:none}
+  .step span.txt{display:none}
+  .proof-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .logo-fallback small{display:none}
+  section.block{padding:50px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR + PROGRESSION ============ -->
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#" class="logo">
+      <!-- Dépose ton logo dans assets/logo.png — sinon repli texte automatique -->
+      <img src="assets/logo.jpg" alt="Déclic Entrepreneurs"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <span class="logo-fallback" style="display:none">
+        <span class="mark">⚡</span><span>DÉCLIC <small>Entrepreneurs</small></span>
+      </span>
+    </a>
+    <nav class="steps" aria-label="Progression">
+      <span class="step"><span class="dot"></span><span class="txt">Découverte</span></span>
+      <span class="bar"></span>
+      <span class="step active"><span class="dot"></span><span class="txt">Vous êtes ici</span></span>
+      <span class="bar"></span>
+      <span class="step"><span class="dot"></span><span class="txt">Votre diagnostic</span></span>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO + VSL ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-head reveal">
+      <span class="badge-mandatory"><span class="pulse"></span>À VISIONNER EN PREMIER</span>
+      <h1>La vidéo qui change votre regard sur <span class="accent">votre fiscalité</span></h1>
+      <p class="lead">Quelques minutes pour comprendre comment des centaines d'entrepreneurs ont repris le contrôle sur leurs impôts — légalement, durablement, sans y passer leurs nuits.</p>
+    </div>
+
+    <div class="vsl-frame reveal d1">
+      <div class="ratio">
+        <!-- ============================================================
+             👉 VSL — EMPLACEMENT RÉSERVÉ (vidéo retirée en attendant l'hébergement)
+             Quand la vidéo sera en ligne (YouTube/Vimeo), REMPLACE tout le bloc
+             .vsl-placeholder ci-dessous par ton <iframe> d'embed. Exemple :
+             <iframe src="https://www.youtube.com/embed/XXXXXXXX" title="VSL"
+                     allow="autoplay; fullscreen; encrypted-media" allowfullscreen></iframe>
+             ============================================================ -->
+        <div class="vsl-placeholder">
+          <span class="vsl-mark">⚡</span>
+          <div class="vsl-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="vsl-txt">Vidéo de présentation<small>Disponible très prochainement</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vsl-caption reveal d2">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> À regarder en intégralité</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Au calme, avec le son</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg> Des informations essentielles</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POURQUOI CETTE VIDÉO ============ -->
+<section class="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="n">1</div><h4>Pour gagner du temps</h4><p>Vous arrivez avec les bonnes clés en main : l'échange va droit au concret, sans repartir de zéro.</p></div>
+      <div class="why-card reveal d1"><div class="n">2</div><h4>Pour voir ce qui est possible</h4><p>Vous découvrez les leviers concrets d'optimisation qui s'appliquent à une situation comme la vôtre.</p></div>
+      <div class="why-card reveal d2"><div class="n">3</div><h4>Pour décider en confiance</h4><p>Vous comprenez notre méthode et notre cadre, pour avancer en toute clarté.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIGARO + LINKEDIN ============ -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">On ne vous demande pas de nous croire</span>
+      <h2>La preuve par les faits</h2>
+      <p>Notre expertise reconnue par la presse économique, et notre fondateur à visage découvert.</p>
+    </div>
+
+    <div class="proof-grid">
+
+      <!-- ============================================================
+           CARTE FIGARO — EMPLACEMENT (vidéo de 1,8 Go retirée en attendant l'hébergement)
+           Aujourd'hui : la miniature renvoie vers l'article Le Figaro.
+           Quand la vidéo sera en ligne (YouTube/Vimeo), remplace l'élément
+           <a class="fig-thumb"> par ton <iframe> d'embed (même principe que la VSL).
+           ============================================================ -->
+      <div class="proof-card reveal">
+        <a class="fig-thumb" href="https://www.lefigaro.fr/economie/reprendre-la-main-sur-sa-fiscalite-le-plaidoyer-de-jerome-jonnard-20251219" target="_blank" rel="noopener" aria-label="Interview de Jérôme Jonnard dans Le Figaro">
+          <img class="fig-poster" src="assets/figaro-poster.jpg" alt="Jérôme Jonnard en interview" />
+          <span class="pill-tag red"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Interview vidéo</span>
+          <span class="fig-brand">Le Figaro<small>Économie</small></span>
+          <div class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+        </a>
+        <div class="proof-body">
+          <div class="src">Le Figaro Économie</div>
+          <h3>« Reprendre la main sur sa fiscalité »</h3>
+          <p>Le plaidoyer de Jérôme Jonnard, dans les colonnes du Figaro, pour une fiscalité maîtrisée et assumée.</p>
+          <a class="proof-cta" href="https://www.lefigaro.fr/economie/reprendre-la-main-sur-sa-fiscalite-le-plaidoyer-de-jerome-jonnard-20251219" target="_blank" rel="noopener">Lire l'article complet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+        </div>
+      </div>
+
+      <!-- CARTE LINKEDIN -->
+      <a class="proof-card reveal d1" href="https://www.linkedin.com/in/jerome-jonnard/" target="_blank" rel="noopener">
+        <div class="li-banner">
+          <span class="glow"></span>
+          <span class="li-brand">
+            <span class="bolt">⚡</span>
+            <span class="bn">DÉCLIC<small>Entrepreneurs</small></span>
+          </span>
+        </div>
+        <div class="li-avatar">
+          <img src="assets/jerome.jpg" alt="Jérôme Jonnard"
+               onerror="this.style.display='none';this.parentElement.insertAdjacentText('beforeend','JJ');" />
+        </div>
+        <div class="li-body">
+          <div class="name">Jérôme Jonnard</div>
+          <div class="role">Fondateur · Déclic Entrepreneurs</div>
+          <p class="li-bio">Expert en optimisation fiscale. <strong>Ancien contrôleur des impôts et de l'URSSAF</strong> et <strong>expert-comptable</strong> de formation — plus de 15&nbsp;ans à décrypter la fiscalité de l'intérieur, aujourd'hui au service des entrepreneurs.</p>
+          <div class="li-meta"><span class="vd"></span> Profil LinkedIn vérifié</div>
+          <span class="li-biglogo" aria-label="Voir le profil LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 9.5H5.67V18.5h2.67V9.5ZM7 5.34a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1ZM18.34 18.5v-4.93c0-2.64-1.41-3.87-3.29-3.87a2.84 2.84 0 0 0-2.57 1.41h-.04V9.5h-2.56v9h2.67v-4.45c0-1.17.22-2.3 1.67-2.3 1.43 0 1.45 1.34 1.45 2.38v4.37h2.67Z"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUI EST JÉRÔME ============ -->
+<section class="alt block">
+  <div class="wrap">
+    <div class="founder-grid">
+      <div class="founder-photo reveal">
+        <img src="assets/jerome.jpg" alt="Jérôme Jonnard"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
+        <div class="fallback" style="display:none">JJ</div>
+        <div class="tag"><strong>Jérôme Jonnard</strong><span>Fondateur — Déclic Entrepreneurs</span></div>
+      </div>
+      <div class="reveal d1">
+        <span class="eyebrow">L'homme derrière le cabinet</span>
+        <h2>Qui est Jérôme Jonnard&nbsp;?</h2>
+        <p><strong>Ancien contrôleur des impôts et de l'URSSAF</strong>, puis <strong>expert-comptable</strong>, Jérôme connaît la fiscalité française des deux côtés de la barrière. Plus de 15&nbsp;ans à en maîtriser les rouages — avant de mettre toute cette expertise au service des entrepreneurs.</p>
+        <p>Il a fondé Déclic Entrepreneurs avec une conviction simple&nbsp;: <strong>trop de chefs d'entreprise paient plus que ce qu'ils ne le devraient</strong>, faute d'avoir le bon interlocuteur à leurs côtés.</p>
+        <p>Sa mission&nbsp;: rendre l'optimisation fiscale accessible, claire et maîtrisée — pour que chaque entrepreneur garde davantage du fruit de son travail, en toute sérénité et dans le respect du cadre. Une vision qu'il porte aujourd'hui jusque dans la presse économique.</p>
+        <div class="cred-row">
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Ex-contrôleur des impôts</span>
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Ex-URSSAF</span>
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Expert-comptable</span>
+        </div>
+        <div class="pressrow">
+          <span class="lbl">Vu &amp; cité dans</span>
+          <span class="press-chip fig">Le Figaro</span>
+          <span class="press-chip">LinkedIn</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHIFFRES ============ -->
+<section class="alt block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Des résultats, pas des promesses</span>
+      <h2>Déclic Entrepreneurs en chiffres</h2>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><div class="num">2&nbsp;000<span class="accent">+</span></div><div class="lbl">entrepreneurs accompagnés</div></div>
+      <div class="stat reveal d1"><div class="num">30,7<span class="accent">M€</span></div><div class="lbl">économisés au total</div></div>
+      <div class="stat reveal d2"><div class="num">4,9<span class="accent">/5</span></div><div class="lbl">satisfaction client</div></div>
+      <div class="stat reveal d3"><div class="num">2014</div><div class="lbl">une expertise éprouvée</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TÉMOIGNAGES ============ -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Ils ont repris le contrôle</span>
+      <h2>Des entrepreneurs comme vous</h2>
+    </div>
+  </div>
+  <div class="marquee rev">
+    <div class="marquee-track tst-track">
+      <!-- série 1 -->
+      <div class="tst">
+        <div class="stars">★★★★★</div>
+        <p>«&nbsp;Grâce à l'accompagnement, j'économise plus de 12&nbsp;000&nbsp;€ par an. Le passage en SASU a tout changé&nbsp;!&nbsp;»</p>
+        <div class="who"><span class="av">SM</span><div><b>Sophie M.</b><small>Consultante Marketing</small></div><span class="save">+12 000 €/an</span></div>
+      </div>
+      <div class="tst">
+        <div class="stars">★★★★★</div>
+        <p>«&nbsp;Je ne comprenais rien à la fiscalité. L'équipe m'a tout expliqué. ROI atteint en 4 mois.&nbsp;»</p>
+        <div class="who"><span class="av">TR</span><div><b>Thomas R.</b><small>Développeur Freelance</small></div><span class="save">+7 400 €/an</span></div>
+      </div>
+      <div class="tst">
+        <div class="stars">★★★★★</div>
+        <p>«&nbsp;La formation m'a permis de récupérer 8&nbsp;000&nbsp;€ d'impôts. La plateforme m'aide encore chaque mois.&nbsp;»</p>
+        <div class="who"><span class="av">ML</span><div><b>Marie L.</b><small>Conseillère Immobilier</small></div><span class="save">+8 000 €/an</span></div>
+      </div>
+      <!-- série 2 (duplicata pour boucle continue) -->
+      <div class="tst">
+        <div class="stars">★★★★★</div>
+        <p>«&nbsp;Grâce à l'accompagnement, j'économise plus de 12&nbsp;000&nbsp;€ par an. Le passage en SASU a tout changé&nbsp;!&nbsp;»</p>
+        <div class="who"><span class="av">SM</span><div><b>Sophie M.</b><small>Consultante Marketing</small></div><span class="save">+12 000 €/an</span></div>
+      </div>
+      <div class="tst">
+        <div class="stars">★★★★★</div>
+        <p>«&nbsp;Je ne comprenais rien à la fiscalité. L'équipe m'a tout expliqué. ROI atteint en 4 mois.&nbsp;»</p>
+        <div class="who"><span class="av">TR</span><div><b>Thomas R.</b><small>Développeur Freelance</small></div><span class="save">+7 400 €/an</span></div>
+      </div>
+      <div class="tst">
+        <div class="stars">★★★★★</div>
+        <p>«&nbsp;La formation m'a permis de récupérer 8&nbsp;000&nbsp;€ d'impôts. La plateforme m'aide encore chaque mois.&nbsp;»</p>
+        <div class="who"><span class="av">ML</span><div><b>Marie L.</b><small>Conseillère Immobilier</small></div><span class="save">+8 000 €/an</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTENAIRES — BANDEAU DÉFILANT ============ -->
+<section class="partners">
+  <div class="wrap"><div class="lbl reveal">Un écosystème de partenaires de confiance</div></div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <!-- série 1 -->
+      <div class="p-chip"><img src="assets/partners/macompta.png" alt="macompta.fr" /></div>
+      <div class="p-chip"><img src="assets/partners/indy.png" alt="Indy" /></div>
+      <div class="p-chip"><img src="assets/partners/qonto.png" alt="Qonto" /></div>
+      <div class="p-chip"><img src="assets/partners/shine.png" alt="Shine" /></div>
+      <div class="p-chip"><img src="assets/partners/orus.png" alt="Orus" /></div>
+      <!-- série 2 (duplicata pour boucle continue) -->
+      <div class="p-chip"><img src="assets/partners/macompta.png" alt="macompta.fr" /></div>
+      <div class="p-chip"><img src="assets/partners/indy.png" alt="Indy" /></div>
+      <div class="p-chip"><img src="assets/partners/qonto.png" alt="Qonto" /></div>
+      <div class="p-chip"><img src="assets/partners/shine.png" alt="Shine" /></div>
+      <div class="p-chip"><img src="assets/partners/orus.png" alt="Orus" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ + COMPTABLE ============ -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Les questions que tout le monde se pose</span>
+      <h2>Avant d'aller plus loin</h2>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq highlight reveal">
+        <summary>Et mon comptable dans tout ça&nbsp;? <span class="ic">+</span></summary>
+        <div class="ans">Votre comptable fait un travail essentiel&nbsp;: il <strong>tient vos comptes et sécurise vos obligations</strong>. Mais son rôle n'est pas de bâtir une stratégie d'optimisation fiscale sur-mesure — ce n'est ni son métier, ni sa mission. Nous intervenons en <strong>complément</strong>, pas en remplacement&nbsp;: votre comptable garde sa place, et nous ajoutons la couche stratégique qui, souvent, change tout sur le montant que vous gardez réellement.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Est-ce que c'est bien dans les règles&nbsp;? <span class="ic">+</span></summary>
+        <div class="ans">Oui. Nous travaillons exclusivement avec des dispositifs <strong>encadrés et reconnus</strong>. L'optimisation fiscale, ce n'est pas «&nbsp;contourner&nbsp;» — c'est utiliser intelligemment les leviers qui existent et auxquels vous avez droit, dans un cadre maîtrisé. Notre objectif est que vous dormiez tranquille.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Combien de temps dure l'échange&nbsp;? <span class="ic">+</span></summary>
+        <div class="ans">L'échange est court et concret&nbsp;: l'objectif est de faire un point clair sur votre situation et de voir si un accompagnement est pertinent dans votre cas. Pour qu'il soit efficace, prévoyez d'être <strong>au calme, avec une bonne connexion</strong> — et d'avoir regardé la vidéo en amont.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Est-ce que ça s'applique vraiment à ma situation&nbsp;? <span class="ic">+</span></summary>
+        <div class="ans">Auto-entrepreneur, indépendant, dirigeant de société&nbsp;: les leviers diffèrent, mais il en existe presque toujours. C'est justement le but du diagnostic&nbsp;: regarder <strong>votre</strong> situation précise et vous dire, honnêtement, ce qui est possible — ou non.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BANDEAU RÉASSURANCE ============ -->
+<section class="reassure">
+  <div class="wrap reveal">
+    <div class="reassure-row">
+      <span class="r"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Sans engagement</span>
+      <span class="r"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg> 2 000+ entrepreneurs accompagnés</span>
+      <span class="r"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/></svg> Une expertise depuis 2014</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESSOURCES ============ -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Prenez le temps de nous découvrir</span>
+      <h2>Pour aller plus loin</h2>
+      <p>Explorez notre univers, en toute transparence.</p>
+    </div>
+    <div class="res-grid">
+      <a class="res-card reveal" href="https://www.declic-entrepreneurs.fr/" target="_blank" rel="noopener">
+        <span class="res-ic site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+        <div><b>Notre site internet</b><small>declic-entrepreneurs.fr</small></div>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+      <a class="res-card reveal d1" href="https://www.instagram.com/declic_entrepreneurs/" target="_blank" rel="noopener">
+        <span class="res-ic insta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
+        <div><b>Instagram</b><small>@declic_entrepreneurs</small></div>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+      <a class="res-card reveal d2" href="https://www.pappers.fr/entreprise/everybodir-802077925" target="_blank" rel="noopener">
+        <span class="res-ic pappers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></span>
+        <div><b>Informations société</b><small>Fiche officielle · Pappers</small></div>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <a href="#" class="logo">
+      <img src="assets/logo.jpg" alt="Déclic Entrepreneurs" style="height:54px;border-radius:12px"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <span class="logo-fallback" style="display:none"><span class="mark">⚡</span><span style="color:#fff">DÉCLIC <small>Entrepreneurs</small></span></span>
+    </a>
+    <p>Optimisation fiscale pour entrepreneurs, indépendants et dirigeants. Reprenez le contrôle de ce que vous gagnez.</p>
+    <p class="small">© 2026 Déclic Entrepreneurs — Tous droits réservés. Les économies mentionnées sont des moyennes constatées et ne constituent pas un engagement de résultat individuel.</p>
+  </div>
+</footer>
+
+<script>
+/* Révélation au scroll */
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+    });
+  },{threshold:.14,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>
