@@ -61,7 +61,7 @@ img{max-width:100%;display:block}
 }
 .eyebrow::before{content:"";width:24px;height:2px;background:var(--orange);border-radius:2px}
 .accent{color:var(--orange)}
-.block-line{display:block;margin-top:14px}
+.block-line{display:block;margin-top:9px}
 
 /* ---------- TOP BAR + PROGRESSION ---------- */
 .topbar{
@@ -82,13 +82,13 @@ img{max-width:100%;display:block}
 .logo-text small{display:block;font-weight:500;color:var(--muted);font-size:10.5px;font-family:'Inter';letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
 
 /* ---------- HERO + VSL ---------- */
-.hero{position:relative;padding:28px 0 14px}
+.hero{position:relative;padding:16px 0 14px}
 .hero::before{content:"";position:absolute;inset:0;z-index:0;background:
   radial-gradient(900px 420px at 50% -140px, rgba(240,146,47,.22), transparent 65%),
   radial-gradient(700px 300px at 80% 10%, rgba(34,55,93,.6), transparent 70%);}
 .hero .wrap{position:relative;z-index:1}
-.hero-head{text-align:center;max-width:1100px;margin:0 auto 42px}
-.hero h1{font-size:clamp(29px,4.8vw,48px);margin:0 0 16px}
+.hero-head{text-align:center;max-width:820px;margin:0 auto 16px}
+.hero h1{font-size:clamp(23px,3.1vw,35px);margin:0 0 16px}
 .hero p.lead{font-size:clamp(16px,2vw,19px);color:var(--muted)}
 .badge-mandatory{
   display:inline-flex;align-items:center;gap:9px;margin-bottom:4px;
@@ -126,7 +126,7 @@ img{max-width:100%;display:block}
 .vsl-caption{display:flex;align-items:center;justify-content:center;gap:22px;margin:18px auto 0;color:var(--muted);font-size:13.5px;flex-wrap:wrap}
 .vsl-caption span{display:inline-flex;align-items:center;gap:7px}
 .vsl-caption svg{width:16px;height:16px;color:var(--orange)}
-.hero-trust{text-align:center;color:var(--muted);font-size:13.5px;font-weight:600;margin:18px auto 0;max-width:640px}
+.hero-trust{text-align:center;color:var(--muted);font-size:13.5px;font-weight:600;margin:8px auto 0;max-width:640px}
 .hero-trust em{color:var(--orange);font-style:normal;font-weight:700}
 .vsl-teaser{text-align:center;margin:0 auto 22px;max-width:760px}
 .vsl-teaser h3{font-family:'Sora';font-weight:700;font-size:18px;color:#fff;margin-bottom:11px}
@@ -202,7 +202,8 @@ section.block{padding:66px 0;position:relative}
 .founder-photo .tag strong{font-family:'Sora';color:#fff;display:block;font-size:15px}
 .founder-photo .tag span{font-size:12.5px;color:var(--orange-2)}
 .founder h2{font-size:clamp(25px,3.6vw,35px);margin:14px 0 18px}
-.founder p{color:var(--muted);margin-bottom:20px;font-size:15.5px}
+.founder p{color:var(--muted);margin-bottom:17px;font-size:15.5px;line-height:1.85}
+.founder-grid p{line-height:1.9;margin-bottom:16px}
 .founder p strong{color:#fff}
 .cred-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
 .cred{display:inline-flex;align-items:center;gap:8px;background:rgba(240,146,47,.12);border:1px solid rgba(240,146,47,.35);
@@ -212,14 +213,17 @@ section.block{padding:66px 0;position:relative}
 .pressrow .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#6f83a3;font-weight:700}
 .press-chip{font-family:'Sora';font-weight:700;color:#fff;font-size:18px;opacity:.92}
 .press-chip.fig{font-family:Georgia,serif;font-weight:700}
-.founder-linkedin{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:10px 18px 10px 12px;border-radius:100px;
-  background:linear-gradient(135deg,rgba(255,255,255,.22),rgba(255,255,255,.04) 45%,rgba(255,255,255,.16));
-  border:1px solid rgba(255,255,255,.4);color:#fff;font-size:13.5px;font-weight:700;
-  box-shadow:0 10px 24px -12px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.3);
+.founder-linkedin{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:11px;padding:13px 24px 13px 14px;border-radius:100px;
+  background:linear-gradient(135deg,rgba(255,255,255,.32),rgba(255,255,255,.07) 45%,rgba(255,255,255,.24));
+  border:1px solid rgba(255,255,255,.58);color:#fff;font-size:15px;font-weight:700;
+  box-shadow:0 14px 30px -10px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.5);
   transition:transform .25s,box-shadow .25s,border-color .25s}
-.founder-linkedin:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.65);box-shadow:0 16px 32px -12px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.4)}
-.founder-linkedin .ic{width:24px;height:24px;border-radius:6px;background:#0a66c2;display:grid;place-items:center;flex:none}
-.founder-linkedin svg{width:14px;height:14px;color:#fff}
+.founder-linkedin:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.85);box-shadow:0 20px 40px -12px rgba(10,102,194,.5), inset 0 1px 0 rgba(255,255,255,.6)}
+.founder-linkedin .ic{width:28px;height:28px;border-radius:7px;background:#0a66c2;display:grid;place-items:center;flex:none}
+.founder-linkedin svg{width:16px;height:16px;color:#fff}
+.founder-linkedin::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;pointer-events:none;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);animation:shine 3.4s ease-in-out infinite}
+@keyframes shine{0%{left:-70%}60%{left:140%}100%{left:140%}}
 
 /* ---------- DOULEUR / GAIN ---------- */
 .pg-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:940px;margin:0 auto}
@@ -272,6 +276,11 @@ section.block{padding:66px 0;position:relative}
 .p-chip{flex:none;height:88px;width:200px;background:#fff;border-radius:14px;display:grid;place-items:center;
   padding:20px 26px;box-shadow:0 10px 28px -14px rgba(0,0,0,.6)}
 .p-chip img{max-height:46px;max-width:150px;width:auto;object-fit:contain}
+/* mêmes cadres que les autres, on grossit seulement le logo à l'intérieur */
+.p-chip.big{padding:4px 12px}
+.p-chip.big img{max-height:80px;max-width:188px}
+.p-chip.xl{padding:2px 10px}
+.p-chip.xl img{max-height:84px;max-width:164px}
 @media (prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;justify-content:center}}
 
 /* ---------- FAQ ---------- */
@@ -311,6 +320,11 @@ section.block{padding:66px 0;position:relative}
 
 /* ---------- VIDÉOS — iframe injectée au clic ---------- */
 .fig-thumb iframe,.vsl-placeholder iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:5}
+/* Interview Figaro : même gabarit que la VSL + texte centré dessous */
+.vsl-frame .fig-thumb{position:absolute;inset:0;aspect-ratio:auto}
+.fig-below{max-width:760px;margin:26px auto 0;text-align:center}
+.fig-below h3{font-family:'Sora';font-weight:700;font-size:clamp(19px,2.6vw,23px);color:#fff;line-height:1.3;margin-bottom:14px}
+.fig-below p{color:var(--muted);font-size:15.5px;margin-bottom:16px}
 
 /* ---------- FOOTER ---------- */
 footer{background:var(--navy-deep);color:#7e93b3;padding:50px 0 36px;text-align:center;border-top:1px solid var(--line)}
@@ -339,6 +353,8 @@ footer .small{font-size:12px;color:#566c8c;margin-top:18px}
   .stats{grid-template-columns:1fr 1fr}
   .logo-fallback small,.logo-text small{display:none}
   section.block{padding:50px 0}
+  .hero h1{font-size:clamp(14px,4.1vw,22px)}
+  .cred-row{justify-content:center}
 }
 </style>
 </head>
@@ -359,53 +375,59 @@ footer .small{font-size:12px;color:#566c8c;margin-top:18px}
   </div>
 </header>
 
-<!-- ============ HERO + VSL ============ -->
+<!-- ============ HERO (titre) ============ -->
 <section class="hero">
   <div class="wrap">
     <div class="hero-head reveal">
-      <h1>Payer moins d'URSSAF et moins d'impôt.<span class="accent block-line">C'est possible.</span></h1>
+      <h1>Vous payez trop d'URSSAF et d'impôts.<span class="accent block-line">Voici l'homme qui va tout changer.</span></h1>
     </div>
-
-    <div class="vsl-teaser reveal d1">
-      <h3>Ce que vous allez comprendre dans cette vidéo</h3>
-      <div class="vsl-teaser-row">
-        <span>Pourquoi vous perdez de l'argent chaque année ?</span>
-        <span>Comment d'autres l'ont récupéré ?</span>
-        <span>À quoi s'attendre lors de votre rendez-vous ?</span>
-      </div>
-    </div>
-
-    <div class="vsl-frame reveal d2">
-      <div class="ratio">
-        <!-- VSL — miniature = vraie frame de la vidéo ; charge l'iframe YouTube au clic -->
-        <div class="vsl-placeholder" id="vslThumb" role="button" tabindex="0" aria-label="Lancer la vidéo de présentation">
-          <img class="vsl-poster" src="assets/vsl-poster.jpg" alt="Aperçu de la vidéo de présentation" />
-          <span class="vsl-mark">⚡</span>
-          <div class="vsl-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-trust reveal d3">2 000+ entrepreneurs accompagnés · 30,7M€ économisés · 4,9/5 · Vu dans <em>Le Figaro</em></div>
+    <div class="hero-trust reveal d1">2 000+ entrepreneurs accompagnés · 30,7M€ économisés · 4,9/5 · Vu dans <em>Le Figaro</em></div>
   </div>
 </section>
 
-<!-- ============ FIGARO + LINKEDIN ============ -->
-<section class="block proof-section">
+<!-- ============ (1) QUI EST JEROME (bio) ============ -->
+<section class="alt block">
   <div class="wrap">
-    <div class="section-head proof-head reveal">
-      <span class="eyebrow">Vous allez nous confier votre fiscalité</span>
-      <h2>Voici qui nous sommes</h2>
-      <p>Notre expertise reconnue par la presse économique, et notre fondateur à visage découvert.</p>
-    </div>
-
-    <div class="proof-grid">
-
-      <!-- CARTE FIGARO — titre + miniature ; charge l'iframe YouTube (vidéo non répertoriée) au clic -->
-      <div class="proof-card reveal">
-        <div class="proof-title-wrap">
-          <h3 class="proof-title">Jérôme Jonnard —<br>interviewé par <span class="accent">Le Figaro Économie</span></h3>
+    <div class="founder-grid">
+      <div class="founder-photo reveal">
+        <img src="assets/jerome.jpg" alt="Jérôme Jonnard"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
+        <div class="fallback" style="display:none">JJ</div>
+        <div class="tag"><strong>Jérôme Jonnard</strong><span>Fondateur — Déclic Entrepreneurs</span></div>
+      </div>
+      <div class="reveal d1">
+        <span class="eyebrow">L'homme derrière le cabinet</span>
+        <h2>Qui est Jérôme Jonnard&nbsp;?</h2>
+        <p>Jérôme Jonnard a connu la fiscalité <strong>des deux côtés de la barrière</strong>.</p>
+        <p><strong>Double master en fiscalité, expert-comptable</strong>, il commence du côté de l'État, comme <strong>contrôleur des impôts, puis à l'URSSAF</strong>&nbsp;: il sait exactement comment l'administration calcule, contrôle, et où les entrepreneurs se font reprendre. Puis il bascule, devient indépendant, et optimise la fiscalité des <strong>grandes fortunes</strong>.</p>
+        <p>Un constat le frappe alors&nbsp;: optimiser sa fiscalité, tout le monde en a le droit, mais <strong>seules les grandes fortunes ont le déclic de le faire</strong>. Les autres, on les laisse payer sans jamais comprendre pourquoi.</p>
+        <p><strong>C'est pour eux qu'est né Déclic</strong>&nbsp;: la synthèse que personne ne fait, pour enfin reprendre la main sur votre fiscalité, récupérer l'argent que vous perdez, et bâtir la stratégie qui vous ressemble.</p>
+        <div class="cred-row">
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Ex-contrôleur des impôts</span>
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Ex-URSSAF</span>
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Expert-comptable</span>
         </div>
+        <div class="pressrow">
+          <span class="lbl">Vu &amp; cité dans</span>
+          <span class="press-chip fig">Le Figaro</span>
+          <a class="founder-linkedin" href="https://www.linkedin.com/in/jerome-jonnard/" target="_blank" rel="noopener">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 9.5H5.67V18.5h2.67V9.5ZM7 5.34a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1ZM18.34 18.5v-4.93c0-2.64-1.41-3.87-3.29-3.87a2.84 2.84 0 0 0-2.57 1.41h-.04V9.5h-2.56v9h2.67v-4.45c0-1.17.22-2.3 1.67-2.3 1.43 0 1.45 1.34 1.45 2.38v4.37h2.67Z"/></svg></span>
+            Voir le profil LinkedIn de Jérôme
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ (2) INTERVIEW FIGARO (grand format, texte dessous) ============ -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Jérôme Jonnard, interviewé par <span class="accent" style="white-space:nowrap">Le Figaro Économie</span></h2>
+    </div>
+    <div class="vsl-frame reveal d1">
+      <div class="ratio">
         <div class="fig-thumb" id="figThumb" role="button" tabindex="0" aria-label="Lire l'interview vidéo de Jérôme Jonnard dans Le Figaro">
           <img class="fig-poster" src="assets/figaro-poster.jpg" alt="Jérôme Jonnard en interview" />
           <span class="pill-tag red"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Interview vidéo</span>
@@ -413,16 +435,11 @@ footer .small{font-size:12px;color:#566c8c;margin-top:18px}
           <div class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
         </div>
       </div>
-
-      <!-- CARTE RÉSUMÉ ARTICLE -->
-      <div class="proof-card plain reveal d1">
-        <div class="proof-body">
-          <h3 class="proof-title">Ancien contrôleur des impôts —<br>ce qu'on vous a toujours caché.</h3>
-          <p>La plupart des entrepreneurs paient trop — parce que personne ne fait jamais la synthèse de leur situation fiscale. Experts-comptables, avocats, notaires&nbsp;: chacun reste dans sa spécialité. Résultat&nbsp;? Des charges mal anticipées, des erreurs évitables, des milliers d'euros perdus chaque année. Après 15&nbsp;ans à voir ce système de l'intérieur, Jérôme Jonnard a décidé de retourner cette expertise au service des entrepreneurs.</p>
-          <a class="proof-cta" href="https://www.lefigaro.fr/economie/reprendre-la-main-sur-sa-fiscalite-le-plaidoyer-de-jerome-jonnard-20251219" target="_blank" rel="noopener">Lire l'article complet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-        </div>
-      </div>
-
+    </div>
+    <div class="fig-below reveal d2">
+      <h3>Ancien contrôleur des impôts, ce qu'on vous a toujours caché.</h3>
+      <p>La plupart des entrepreneurs paient trop, parce que personne ne fait jamais la synthèse de leur situation fiscale. Experts-comptables, avocats, notaires&nbsp;: chacun reste dans sa spécialité. Résultat&nbsp;? Des charges mal anticipées, des erreurs évitables, des milliers d'euros perdus chaque année. Après 15&nbsp;ans à voir ce système de l'intérieur, Jérôme Jonnard a décidé de retourner cette expertise au service des entrepreneurs.</p>
+      <a class="proof-cta" href="https://www.lefigaro.fr/economie/reprendre-la-main-sur-sa-fiscalite-le-plaidoyer-de-jerome-jonnard-20251219" target="_blank" rel="noopener">Lire l'article complet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
     </div>
   </div>
 </section>
@@ -439,41 +456,6 @@ footer .small{font-size:12px;color:#566c8c;margin-top:18px}
       <div class="stat reveal d1"><div class="num">30,7<span class="accent">M€</span></div><div class="lbl">économisés au total</div></div>
       <div class="stat reveal d2"><div class="num">4,9<span class="accent">/5</span></div><div class="lbl">satisfaction client</div></div>
       <div class="stat reveal d3"><div class="num">2014</div><div class="lbl">une expertise éprouvée</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ QUI EST JÉRÔME ============ -->
-<section class="alt block">
-  <div class="wrap">
-    <div class="founder-grid">
-      <div class="founder-photo reveal">
-        <img src="assets/jerome.jpg" alt="Jérôme Jonnard"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
-        <div class="fallback" style="display:none">JJ</div>
-        <div class="tag"><strong>Jérôme Jonnard</strong><span>Fondateur — Déclic Entrepreneurs</span></div>
-      </div>
-      <div class="reveal d1">
-        <span class="eyebrow">L'homme derrière le cabinet</span>
-        <h2>Qui est Jérôme Jonnard&nbsp;?</h2>
-        <p><strong>Ancien contrôleur des impôts et de l'URSSAF</strong>, puis <strong>expert-comptable</strong>, Jérôme connaît la fiscalité française des deux côtés de la barrière. Plus de 15&nbsp;ans à en maîtriser les rouages — avant de mettre toute cette expertise au service des entrepreneurs.</p>
-        <p>Il a fondé Déclic Entrepreneurs avec une conviction simple&nbsp;: <strong>trop de chefs d'entreprise paient plus que ce qu'ils ne le devraient</strong>, faute d'avoir le bon interlocuteur à leurs côtés.</p>
-        <p>Sa mission&nbsp;: rendre l'optimisation fiscale accessible, claire et maîtrisée — pour que chaque entrepreneur garde davantage du fruit de son travail, en toute sérénité et dans le respect du cadre. Une vision qu'il porte aujourd'hui jusque dans la presse économique.</p>
-        <div class="cred-row">
-          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Ex-contrôleur des impôts</span>
-          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Ex-URSSAF</span>
-          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Expert-comptable</span>
-        </div>
-        <div class="pressrow">
-          <span class="lbl">Vu &amp; cité dans</span>
-          <span class="press-chip fig">Le Figaro</span>
-          <span class="press-chip">LinkedIn</span>
-        </div>
-        <a class="founder-linkedin" href="https://www.linkedin.com/in/jerome-jonnard/" target="_blank" rel="noopener">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 9.5H5.67V18.5h2.67V9.5ZM7 5.34a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1ZM18.34 18.5v-4.93c0-2.64-1.41-3.87-3.29-3.87a2.84 2.84 0 0 0-2.57 1.41h-.04V9.5h-2.56v9h2.67v-4.45c0-1.17.22-2.3 1.67-2.3 1.43 0 1.45 1.34 1.45 2.38v4.37h2.67Z"/></svg></span>
-          Voir le profil LinkedIn de Jérôme
-        </a>
-      </div>
     </div>
   </div>
 </section>
@@ -532,14 +514,14 @@ footer .small{font-size:12px;color:#566c8c;margin-top:18px}
       <!-- série 1 -->
       <div class="p-chip"><img src="assets/partners/macompta.png" alt="macompta.fr" /></div>
       <div class="p-chip"><img src="assets/partners/indy.png" alt="Indy" /></div>
-      <div class="p-chip"><img src="assets/partners/qonto.png" alt="Qonto" /></div>
-      <div class="p-chip"><img src="assets/partners/shine.png" alt="Shine" /></div>
+      <div class="p-chip big xl"><img src="assets/partners/qonto.png" alt="Qonto" /></div>
+      <div class="p-chip big"><img src="assets/partners/shine.png" alt="Shine" /></div>
       <div class="p-chip"><img src="assets/partners/orus.png" alt="Orus" /></div>
       <!-- série 2 (duplicata pour boucle continue) -->
       <div class="p-chip"><img src="assets/partners/macompta.png" alt="macompta.fr" /></div>
       <div class="p-chip"><img src="assets/partners/indy.png" alt="Indy" /></div>
-      <div class="p-chip"><img src="assets/partners/qonto.png" alt="Qonto" /></div>
-      <div class="p-chip"><img src="assets/partners/shine.png" alt="Shine" /></div>
+      <div class="p-chip big xl"><img src="assets/partners/qonto.png" alt="Qonto" /></div>
+      <div class="p-chip big"><img src="assets/partners/shine.png" alt="Shine" /></div>
       <div class="p-chip"><img src="assets/partners/orus.png" alt="Orus" /></div>
     </div>
   </div>
@@ -658,7 +640,6 @@ footer .small{font-size:12px;color:#566c8c;margin-top:18px}
     el.addEventListener('click', load);
     el.addEventListener('keydown', onKey);
   }
-  clickToPlay(document.getElementById('vslThumb'), 'OKmfFUvFyGE', 'Vidéo de présentation — Déclic Entrepreneurs');
   clickToPlay(document.getElementById('figThumb'), 'YO4C_KEUBbc', 'Interview de Jérôme Jonnard — Le Figaro');
 })();
 </script>
